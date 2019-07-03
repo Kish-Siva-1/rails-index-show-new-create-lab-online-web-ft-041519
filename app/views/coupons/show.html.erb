@@ -1,2 +1,4 @@
-<%= @coupon.store %>
-<%= @coupon.coupon_code %>
+<% Coupon.all.each do |x| %>
+<%= x.store %>
+<%= x.coupon_code %>
+<% end %>
